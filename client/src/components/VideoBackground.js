@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 const VideoBackground = () => {
   return (
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Cp2QTBZAFQ?si=U0zRKO53fiwYNh74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'/>
-    </div>
-  )
-}
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+      <iframe
+        className='w-screen aspect-video'
+        src="https://www.youtube.com/embed/ofUOATVjKF0?si=8PTlKE164VC4es6G&autoplay=1&mute=1&loop=1&playlist=ofUOATVjKF0"
 
-export default VideoBackground
+        title="YouTube video player"
+        frameBorder="0"
+       
+        
+      ></iframe>
+    </div>
+  );
+};
+
+export default VideoBackground;
